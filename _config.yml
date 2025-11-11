@@ -39,3 +39,7 @@ author:
 
 # Custom vars
 version: 3.0.0
+
+# --- minimal config ---
+url: "https://HyeonjinCha.github.io"
+baseurl: ""
