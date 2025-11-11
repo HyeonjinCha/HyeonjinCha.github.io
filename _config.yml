@@ -1,13 +1,12 @@
 title: "Paper Demo"
 url: "https://HyeonjinCha.github.io"
-baseurl: ""
-theme: null
+baseurl: ""        # User Page면 빈 문자열
+theme: null        # 외부 테마 사용 금지 (Poole 복사형 사용)
 markdown: kramdown
 kramdown:
   input: GFM
+
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
-  - jekyll-paginate
-  - jekyll-gist
