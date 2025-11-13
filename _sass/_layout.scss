@@ -3,14 +3,51 @@
 // Styles for managing the structural hierarchy of the site.
 
 .container {
-  max-width: 45rem;
+  max-width: 52rem;
+  /* 최대 너비: 45rem (약 720px) */
   padding-left: var(--spacer-2);
+  /* 좌우 패딩 (공간 변수) */
   padding-right: var(--spacer-2);
-  margin-left:  auto;
+  margin-left: auto;
   margin-right: auto;
 }
 
 footer {
   margin-top: var(--spacer-3);
   margin-bottom: var(--spacer-3);
+}
+
+/* 오디오 플레이어 크기 */
+audio {
+  width: 100px;
+  height: 32px;
+}
+
+/* 표 내부 글자 크기 */
+table th,
+table td {
+  font-size: 0.9em;
+  /* 원래 크기보다 살짝 작게 */
+  padding: 4px;
+}
+
+/* (선택) 헤더 셀만 더 작게 하고 싶다면 */
+table th {
+  font-size: 0.75em;
+}
+
+/* (선택) 이모티콘 크기만 별도 조절하고 싶으면 */
+audio::-webkit-media-controls-play-button {
+  transform: scale(0.7);
+  /* 크롬/사파리 등 최신 브라우저에서만 일부 적용 */
+}
+
+td audio {
+  width: 100%;
+  min-width: 90px;
+  /* 너무 작아지면 최소폭 */
+  max-width: 95%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
