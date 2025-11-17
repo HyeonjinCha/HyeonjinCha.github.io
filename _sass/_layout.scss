@@ -17,23 +17,27 @@ footer {
   margin-bottom: var(--spacer-3);
 }
 
-/* 오디오 플레이어 크기 */
-audio {
-  width: 100px;
-  height: 32px;
-}
-
-/* 표 내부 글자 크기 */
 table th,
 table td {
   font-size: 0.9em;
-  /* 원래 크기보다 살짝 작게 */
   padding: 4px;
+  vertical-align: top;
+  min-width: 90px;
+  /* 오디오보다 약간 더 넓게 할 것 */
+  word-break: break-word;
 }
 
-/* (선택) 헤더 셀만 더 작게 하고 싶다면 */
-table th {
-  font-size: 0.75em;
+td audio,
+th audio,
+table audio {
+  width: 100px !important;
+  /* 원한다면 60~90px 사이로 직접 실험 */
+  min-width: 100px !important;
+  max-width: 100px !important;
+  height: 28px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block;
 }
 
 /* (선택) 이모티콘 크기만 별도 조절하고 싶으면 */
